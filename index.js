@@ -17,7 +17,10 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+/*Internal variable is not global. 
+Its private to the myFunction. 
+The nested function was created within that function therefore it has access to any variable within myFunction.
+So nested function is considered the child and still in scope.*/
 
 
 
@@ -28,12 +31,15 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(num) {
+  let count = 0;
+  for(let i = 0; i < num; i++) {
+    count += i+1;
   }
+  return count;
+}
  
-
+console.log(summation(10));
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
 
