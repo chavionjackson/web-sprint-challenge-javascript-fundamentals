@@ -29,13 +29,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+    .map creates a new array, forEach does not. For gathers information while map changes data and creates a new array.
+
 2. Explain the difference between a callback and a higher order function.
+
+Call back is an already set function invoked inside of another function. The higher order function is the function that holds the callback. 
 
 3. What is closure?
 
+A function accessing other data from parent function. 
+
 4. Describe the four rules of the 'this' keyword.
 
+window/Global Binding: When the value of this is in global scope. Accessing from anywhere.
+Implicit Binding: preceding dot calls a function.
+New Binding: When using constructo function, this refers to the constructor object. 
+Explicit Binding: Whenever using call or apply method.
+
 5. Why do we need super() in an extended class?
+
+Super copies the parent objects instead of using call or apply. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
